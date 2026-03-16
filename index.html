@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ma présentation</title>
+  <style>
+    html, body {
+      margin: 0;
+      height: 100%;
+      background: #111;
+    }
+
+    .topbar {
+      height: 56px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 16px;
+      box-sizing: border-box;
+      background: #1c1c1c;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+
+    .topbar a {
+      color: white;
+      text-decoration: none;
+      background: #2d2d2d;
+      padding: 8px 12px;
+      border-radius: 8px;
+    }
+
+    .viewer {
+      height: calc(100% - 56px);
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      background: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <div>Ma présentation</div>
+    <a href="presentation.pdf" target="_blank">Ouvrir le PDF</a>
+  </div>
+
+  <div class="viewer">
+    <iframe src="presentation.pdf"></iframe>
+  </div>
+</body>
+</html>
